@@ -7,19 +7,23 @@ namespace EDC_
     {
         static void Main(string[] args)
         {
-            Queue Fila = new Queue();
+            var jogo = new BatataQuente();
 
-            Fila.Enqueue(1);
-            Fila.Enqueue(2);
-            Fila.Enqueue(3);
+            jogo.JogarBatataQuente(new string[]{"James", "Rebeca"}, 2);
 
-            Fila.IsEmpty();
+            // Queue Fila = new Queue();
 
-            Fila.Front();
+            // Fila.Enqueue("james");
+            // Fila.Enqueue(2);
+            // Fila.Enqueue(3);
 
-            Console.WriteLine(Fila.Dequeue());
+            // Fila.IsEmpty();
 
-            Fila.Show();
+            // Fila.Front();
+
+            // Console.WriteLine(Fila.Dequeue());
+
+            // Fila.Front();
 
             // Fila.Size();
 
