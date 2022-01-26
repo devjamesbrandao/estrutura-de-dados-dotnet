@@ -1,36 +1,35 @@
 using System;
-using System.Collections.Generic;
 
 namespace EDC.Filas
 {
     public class Queue
     {
-        public int[] Items = new int[10];
+        public string[] Items = new string[10];
 
         public int Count = 0;
 
-        public void Enqueue(int Element)
+        public void Enqueue(string Element)
         {
             Items[Count] = Element;
             Count ++;
         }
 
-        public int Dequeue()
+        public string Dequeue()
         {
             if(this.Count == 0)
             {
                 Console.WriteLine("A fila está vazia!");
-                return -1;
+                return "";
             }
             else
             {
-                int Returned = Items[0];
+                string Returned = Items[0];
 
                 for(int i = 0; i < this.Count - 1; i++){
                     this.Items[i] = this.Items[i+1];
                 }
 
-                this.Items[this.Count - 1] = 0;
+                this.Items[this.Count - 1] = null;
 
                 this.Count--;
                 
@@ -61,16 +60,14 @@ namespace EDC.Filas
             }
         }
 
-        public void Size()
+        public int Size()
         {
             if(this.Count == 0)
             {
                 Console.WriteLine("A Fila não contém elementos");
-            } 
-            else 
-            {
-                Console.WriteLine("O tamanho da Fila é: " + this.Count);
             }
+
+            return Count;
         }
 
         public void Show()
