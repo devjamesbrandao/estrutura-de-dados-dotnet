@@ -37,26 +37,26 @@ namespace EDC.Filas
             }
         }
 
-        public void Front()
+        public string Front()
         {
             if(Count == 0)
             {
-                Console.WriteLine("Não existe elementos na Fila!");
+                return "";
             } 
             else 
             {
-                Console.WriteLine(this.Items[0]);
+                return this.Items[0];
             }
         }
 
-        public void IsEmpty()
+        public bool IsEmpty()
         {
             if(this.Count == 0)
             {
-                Console.WriteLine(true);
+                return true;
             }else
             {
-                Console.WriteLine(false);
+                return false;
             }
         }
 
