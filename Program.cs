@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using EDC.Filas;
 
 namespace EDC_
@@ -7,30 +9,42 @@ namespace EDC_
     {
         static void Main(string[] args)
         {
+            Splice(1);
+        }
+
+        static void BatataQuente()
+        {
             var jogo = new BatataQuente();
 
             jogo.JogarBatataQuente(new string[]{"James", "Rebeca"}, 2);
+        }
 
-            // Queue Fila = new Queue();
+        static void Splice(int posicao)
+        {
+            List<string> foo = new List<string>();
 
-            // Fila.Enqueue("james");
-            // Fila.Enqueue(2);
-            // Fila.Enqueue(3);
+            foo.Add("one");
+            foo.Add("two");
+            foo.Add("three");
 
-            // Fila.IsEmpty();
+            var bar = foo.Take(posicao + 1).ToList();
 
-            // Fila.Front();
+            if(foo.Count != bar.Count())
+            {
+                string[] aux = foo.ToArray()[(posicao + 1)..^0];
 
-            // Console.WriteLine(Fila.Dequeue());
+                bar.Add("Teste");
 
-            // Fila.Front();
+                foreach(var i in aux)
+                {
+                    bar.Add(i);
+                }
 
-            // Fila.Size();
-
-            // Fila.Dequeue();
-
-            // Fila.Size();
-
+                foreach(var e in bar)
+                {
+                    Console.WriteLine(e);
+                }
+            }
         }
     }
 }
