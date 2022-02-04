@@ -1,6 +1,8 @@
 ﻿using System;
 using EDC.Filas;
 using EDC.ListaSimplesLigada;
+using estrutura_de_dados_dotnet.Conjuntos;
+using estrutura_de_dados_dotnet.ListaDuplalLigada;
 
 namespace EDC_
 {
@@ -8,7 +10,38 @@ namespace EDC_
     {
         static void Main(string[] args)
         {
-           
+           Conjuntos();
+        }
+
+        static void ListaDuplalLigada()
+        {
+            var lista = new DoubleLinkedList();
+
+            lista.Adicionar(1);
+
+            lista.Adicionar(2);
+
+            lista.Adicionar(3);
+
+            lista.RemoverPosicao(2);
+        }
+
+        static void Conjuntos()
+        {
+            var conjuntos = new Conjuntos();
+
+            conjuntos.Adicionar("A");
+
+            conjuntos.Adicionar("B");
+
+            conjuntos.Adicionar("C");
+
+            var valores = conjuntos.Valores();
+
+            foreach(var i in valores)
+            {
+                Console.WriteLine(i);
+            }
         }
 
         static void ListaLigada()
