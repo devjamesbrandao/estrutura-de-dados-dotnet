@@ -60,5 +60,77 @@ namespace estrutura_de_dados_dotnet.Conjuntos
 
             return valores;
         }
+
+
+        public IEnumerable<string> Unir(Conjuntos Outro)
+        {
+            var set = new HashSet<string>(this.Valores());
+
+            foreach(var i in Outro.Valores())
+            {
+                set.Add(i);
+            }
+
+            return set;
+        }
+
+
+        public IEnumerable<string> Interseccao(Conjuntos Outro)
+        {
+            var intersec = new HashSet<string>();
+
+            var valores = this.Valores();
+
+            for(var i = 0; i < valores.Count; i++)
+            {
+                if(Outro.Possui(valores[i]))
+                {
+                    intersec.Add(valores[i]);
+                }
+            }
+
+            return intersec;
+        }
+
+
+        public IEnumerable<string> Diferenca(Conjuntos outro)
+        {
+            var diferenca = new HashSet<string>();
+
+            var valores = this.Valores();
+
+            for(var i = 0; i < valores.Count; i++)
+            {
+                if(!outro.Possui(valores[i]))
+                {
+                    diferenca.Add(valores[i]);
+                }
+            }
+
+            return diferenca;
+        }
+
+
+        public bool SubConjunto(Conjuntos outro)
+        {
+            if(this.Tamanho() > outro.Tamanho())
+            {
+                return false;
+            }
+            else
+            {
+                var valores = this.Valores();
+
+                for(var i = 0; i < valores.Count; i++)
+                {
+                    if(!outro.Possui(valores[i]))
+                    {
+                        return false;
+                    }
+                }
+
+                return true;
+            }
+        }
     }
 }
