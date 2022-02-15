@@ -16,6 +16,16 @@ namespace estrutura_de_dados_dotnet.Hash
             Tabela[posicao] = valor;
         }
 
+        public void Remover(string chave)
+        {
+            Tabela[GerarHash(chave)] = null;
+        }
+
+        public string Obter(string chave)
+        {
+            return Tabela[GerarHash(chave)];
+        }
+
         public int GerarHash(string chave)
         {
             int hash = 0;
@@ -26,6 +36,23 @@ namespace estrutura_de_dados_dotnet.Hash
             }
 
             return hash % 37;
+        }
+
+        public void Print()
+        {
+            int cont = 0;
+
+            foreach(var i in Tabela)
+            {
+                Console.WriteLine(cont + " : " + i.ToString());
+
+                cont++;
+            }
+        }
+
+        public int Tamanho()
+        {
+            return Tabela.Count;
         }
     }
 }
