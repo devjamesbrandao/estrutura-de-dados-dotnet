@@ -22,6 +22,10 @@ namespace EDC_
             hash.Adicionar("A", "Amora");
 
             hash.Adicionar("B", "Buriti");
+
+            hash.Print();
+
+            Console.WriteLine(hash.Tamanho());
         }
 
         static void Dicio()
