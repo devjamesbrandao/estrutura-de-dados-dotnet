@@ -3,7 +3,7 @@
 <hr/>
 
 <p align="center">
-    <img src="https://github.com/devjamesbrandao/LojaOnline/blob/main/context-map.png" alt="Context Map of aplication" title="Online shopp">
+    <img src="https://github.com/devjamesbrandao/estrutura-de-dados-dotnet/blob/main/Python-Set-Operatioons.png" alt="Sets" title="Sets">
 </p> 
 
 ### ` 🔍 About`
