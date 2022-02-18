@@ -8,6 +8,48 @@
     <img src="https://github.com/devjamesbrandao/estrutura-de-dados-dotnet/blob/main/Python-Set-Operatioons.png" alt="Sets" title="Sets">
 </p> 
 
+### ` Dictionaries`
+
+<p align="center">
+    <img src="https://github.com/devjamesbrandao/estrutura-de-dados-dotnet/blob/main/dictionary.png" alt="Dictionaries" title="Dictionaries">
+</p> 
+
+### ` Queues`
+
+<p align="center">
+    <img src="https://github.com/devjamesbrandao/estrutura-de-dados-dotnet/blob/main/Queue.svg.png" alt="Queues" title="Queues">
+</p> 
+
+### ` Hash Table`
+
+<p align="center">
+    <img src="https://github.com/devjamesbrandao/estrutura-de-dados-dotnet/blob/main/hash.png" alt="Hash Table" title="Hash Table">
+</p> 
+
+### ` Singly Linked List`
+
+<p align="center">
+    <img src="https://github.com/devjamesbrandao/estrutura-de-dados-dotnet/blob/main/singly.png" alt="Singly Linked List" title="Singly Linked List">
+</p> 
+
+### ` Double Linked List`
+
+<p align="center">
+    <img src="https://github.com/devjamesbrandao/estrutura-de-dados-dotnet/blob/main/double.png" alt="Double Linked List" title="Double Linked List">
+</p> 
+
+### ` Tree`
+
+<p align="center">
+    <img src="https://github.com/devjamesbrandao/estrutura-de-dados-dotnet/blob/main/tree.png" alt="Tree" title="Tree">
+</p> 
+
+### ` Graph`
+
+<p align="center">
+    <img src="https://github.com/devjamesbrandao/estrutura-de-dados-dotnet/blob/main/graph.png" alt="Graph" title="Graph">
+</p> 
+
 ### ` 🔍 About`
 
 <p align="justify">This project covers the main topics on data structures, all of which were developed in C#.</p>
@@ -18,7 +60,7 @@
 * Dictionaries
 * Queues
 * Hash table
-* Simply linked lists
+* Singly linked lists
 * Double linked lists
 * Trees
 * Graphs
