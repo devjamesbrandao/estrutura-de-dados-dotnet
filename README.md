@@ -2,6 +2,8 @@
 
 <hr/>
 
+### ` Sets`
+
 <p align="center">
     <img src="https://github.com/devjamesbrandao/estrutura-de-dados-dotnet/blob/main/Python-Set-Operatioons.png" alt="Sets" title="Sets">
 </p> 
